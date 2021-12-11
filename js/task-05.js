@@ -3,7 +3,7 @@ const refs = {
     output: document.querySelector('#name-output')
 }
 refs.input.addEventListener('input', (event) => {
-    if (event.currentTarget.value === "") { refs.output.textContent = "Anonymous" } else
+    if (event.currentTarget.value.trim() === "") { refs.output.textContent = "Anonymous" } else
         {refs.output.textContent = event.currentTarget.value;
 }
 })
